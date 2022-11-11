@@ -53,7 +53,7 @@ bool LedDeviceSk6812SPI::init(const QJsonObject &deviceConfig)
 
 int LedDeviceSk6812SPI::write(const std::vector<ColorRgb> &ledValues)
 {
-	unsigned spi_ptr = 0;
+	unsigned spi_ptr = 3;
 	const int SPI_BYTES_PER_LED = sizeof(ColorRgbw) * SPI_BYTES_PER_COLOUR;
 
 
